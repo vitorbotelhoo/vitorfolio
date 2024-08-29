@@ -1,113 +1,114 @@
+import { Gabarito } from "next/font/google";
+import "./globals.css";
 import Image from "next/image";
+import tailwindConfig from "@/tailwind.config";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
+    <main className="flex min-h-screen flex-col items-center justify-start py-24 px-2">
+     <div className="flex flex-col items-start justify-start gap-12 max-w-xl p-4">
+
+      {/* Logo aqui */}
+
+      <img className="w-12 h-12 object-contain" src="jelly.png" ></img>  
+
+      {/* Heading e Description */}
+
+      <div className="flex flex-col gap-2">
+        <h1 className="text-3xl">
+          Vitor Botelho
+        </h1>
+        <p className="font-normal text-md leading-7">
+          Brand and Product Designer | Great Florianópolis, Brazil. 🇧🇷
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      </div>
+
+      {/* Subheading */}
+
+      <div className="flex flex-col gap-2" >
+        <h3 className="text-lg">
+          Who is Vitor?
+        </h3>
+        <p className="font-normal text-md leading-7 text-slate-500">
+          I create intuitive, user-centered designs that blend my expertise in graphic, interface, and user experience design, aiming to exceed expectations and deliver joyful, impactful solutions.
+        </p>
+      </div>
+
+      {/* Lista de Item */}
+      
+    <div className="flex flex-row gap-2 w-full">
+
+      <div className="flex align-end justify-start w-full flex-col pr-6 pt-12 pl-4 pb-4 gap-2 rounded-xl border-slate-900 border-2">
+        <img src="jelly.png" className="object-contain h-6 w-6"></img>
+        <h5 className="text-md w-full leading-6">
+          Websites, apps, interfaces and user focused design work.
+        </h5>
+      </div>
+
+      <div className="flex align-end justify-start w-full flex-col pr-6 pt-12 pl-4 pb-4 gap-2 rounded-xl border-slate-900 border-2">
+        <img src="jelly.png" className="object-contain h-6 w-6"></img>
+        <h5 className="text-md w-full leading-6">
+          Brand, social media, editorial and graphic design work.
+        </h5>
+      </div>
+
+    </div>
+
+    <div className="flex flex-col gap-4 w-full sm:flex-row">
+      <div className="flex w-fit">
+        <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="jelly.png" ></img>  
+      </div>
+      <div className="flex flex-col gap-1 w-full">
+        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+          <p className="text-md w-full leading-6">App <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://clincard.com.br/">Clincard</a></p>
+          <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2024 
+            <span className="bg-green-900 text-green-200 ml-2 px-1 py-0 border-green-800 border-2 rounded-md">On App Store</span></p>
         </div>
+        <p className="text-md w-full leading-6 text-slate-500">
+        Revitalized the Clincard app, focusing on user-friendly navigation, clear personal data control, and seamless feature access, tailored for the Holder's experience.
+        </p>
+        <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="clincard - 02.png"></img>
+        <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="clincard - 01.png"></img>
       </div>
+    </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    <div className="flex flex-col gap-4 w-full sm:flex-row">
+      <div className="flex w-fit">
+        <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="airplane.png" ></img>  
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex flex-col gap-1 w-full">
+        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+          <p className="text-md w-full leading-6">Webapp <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://www.harpa.global/en">Harpa Global</a></p>
+          <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2024 
+            <span className="bg-green-900 text-green-200 ml-2 px-1 py-0 border-green-800 border-2 rounded-md">On Live</span></p>
+        </div>
+        <p className="text-md w-full leading-6 text-slate-500">
+        The Harpa Global web app was a solid challenge in managing user flows and collaborating with developers long-term. It helped me better understand and address user needs in a hands-on way.
+        </p>
+        <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="harpa - 01.png"></img>
       </div>
+    </div>
+
+    <div className="flex flex-col gap-4 w-full sm:flex-row">
+      <div className="flex w-fit">
+        <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="jelly.png" ></img>  
+      </div>
+      <div className="flex flex-col gap-1 w-full">
+        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+          <p className="text-md w-full leading-6">Website <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://devops.inf.br/">Devops</a></p>
+          <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2022</p>
+        </div>
+        <p className="text-md w-full leading-6 text-slate-500">
+          Redesigned the Devops website 
+        </p>
+        <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="devops - 01.png"></img>
+      </div>
+    </div>
+
+
+
+      {/* Final */}
+     </div> 
     </main>
   );
 }

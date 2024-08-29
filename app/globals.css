@@ -6,28 +6,57 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --cores-branco: rgb(255 255 255);
+  --cores-neutros-neutral--20: rgb(227 235 242);
+  --cores-neutros-neutral--30: rgb(160 172 181);
+  --cores-neutros-neutral--50: rgb(72 74 78);
+  --cores-neutros-neutral--70: rgb(20 20 21);
+  --cores-azul-po-a: rgb(178 217 252);
+  --cores-azul-corrente: rgb(0 147 255);
+  --cores-azul-marinho: rgb(15 39 82);
+  --cores-azul-baleia: rgb(8 21 44);
+  --cores-azul-noite: rgb(3 7 8);
+  --cores-rosa-rosado: rgb(244 219 235);
+  --cores-rosa-rosa: rgb(237 166 213);
+  --cores-rosa-bord-: rgb(64 19 39);
+  --cores-situacionais-negativo-10: rgb(240 207 215);
+  --cores-situacionais-negativo--20: rgb(225 155 172);
+  --cores-situacionais-negativo--40: rgb(240 74 114);
+  --cores-situacionais-negativo--70: rgb(108 7 31);
+  --cores-situacionais-positivo--10: rgb(227 254 238);
+  --cores-situacionais-positivo--20: rgb(167 253 202);
+  --cores-situacionais-positivo--40: rgb(43 235 120);
+  --cores-situacionais-positivo--70: rgb(10 78 37);
+  --desktop-heading-1: 48px;
+  --desktop-heading-2: 36px;
+  --desktop-heading-3: 28px;
+  --desktop-subheading: 20px;
+  --desktop-callout: 12px;
+  --desktop-long-text: 16px;
+  --desktop-bold-long-text: 16px;
+  --desktop-button-text: 16px;
+  --desktop-observartion: 12px;
+  --desktop-support: 12px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--cores-azul-noite);
+  color: var(--cores-branco);
+  margin: 0px; padding: 0px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .flex-column-media {
+    flex-direction: column;
+  }
+
+  .image-get-vertical {
+    max-height: 400px;
   }
 }
