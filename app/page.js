@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Lista de Item */}
       
-    <div className="flex flex-row gap-2 w-full my-12">
+    <div className="flex flex-col sm:flex-row gap-2 w-full my-12">
 
       <div className="flex align-end justify-start w-full flex-col pr-6 pt-14 pl-4 pb-4 gap-4 rounded-2xl border-slate-900 border-2">
         <img src="icon-product-01.png" className="object-contain h-12 w-12"></img>
