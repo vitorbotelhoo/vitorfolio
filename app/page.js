@@ -68,7 +68,7 @@ export default function Home() {
             <span className="bg-green-900 text-green-200 ml-2 px-1 py-0 border-green-800 border-2 rounded-md">On App Store</span></p>
         </div>
         <p className="text-md w-full leading-6 text-slate-500">
-        Revitalized the Clincard app, focusing on user-friendly navigation, clear personal data control, and seamless feature access, tailored for the Holder's experience.
+        Revitalized the Clincard app, focusing on user-friendly navigation, clear personal data control, and seamless feature access, tailored for the Holder&apos;s experience.
         </p>
         <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="clincard - 02.png"></img>
         <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="clincard - 01.png"></img>
