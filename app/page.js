@@ -109,7 +109,7 @@ export default function Home() {
     </div>
 <div className="flex w-full">
     <h3 className="text-4xl w-full mt-24 leading-10 text-center">
-      Let&apos;s make internet, <span className="text-blue-300">beauty</span><br/> and <span className="text-pink-300">better</span> together.
+      Let&apos;s make internet <span className="text-blue-300">beauty</span> and <span className="text-pink-300">better</span> together.
     </h3>
 </div>
   <div className="flex w-full justify-center my-4 flex-row gap-2">
