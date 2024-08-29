@@ -9,8 +9,9 @@ export default function Home() {
      <div className="flex flex-col items-start justify-start gap-12 max-w-xl p-4">
 
       {/* Logo aqui */}
-
-      <img className="w-12 h-12 object-contain" src="jelly.png" ></img>  
+      <div className="flex align-center justify-start">
+        <img className="h-32 w-full object-contain" src="vitorpic.png" ></img>  
+      </div>
 
       {/* Heading e Description */}
 
@@ -36,27 +37,29 @@ export default function Home() {
 
       {/* Lista de Item */}
       
-    <div className="flex flex-row gap-2 w-full">
+    <div className="flex flex-row gap-2 w-full my-12">
 
-      <div className="flex align-end justify-start w-full flex-col pr-6 pt-12 pl-4 pb-4 gap-2 rounded-xl border-slate-900 border-2">
-        <img src="jelly.png" className="object-contain h-6 w-6"></img>
-        <h5 className="text-md w-full leading-6">
+      <div className="flex align-end justify-start w-full flex-col pr-6 pt-14 pl-4 pb-4 gap-4 rounded-2xl border-slate-900 border-2">
+        <img src="icon-product-01.png" className="object-contain h-12 w-12"></img>
+        <h5 className="text-xl w-full leading-6">
           Websites, apps, interfaces and user focused design work.
         </h5>
+        <a href="#ux" className="text-md text-slate-500">See more</a>
       </div>
 
-      <div className="flex align-end justify-start w-full flex-col pr-6 pt-12 pl-4 pb-4 gap-2 rounded-xl border-slate-900 border-2">
-        <img src="jelly.png" className="object-contain h-6 w-6"></img>
-        <h5 className="text-md w-full leading-6">
+      <div className="flex align-end justify-start w-full flex-col pr-6 pt-14 pl-4 pb-4 gap-4 rounded-2xl border-slate-900 border-2">
+        <img src="icon-product-02.png" className="object-contain h-12 w-12"></img>
+        <h5 className="text-xl w-full leading-6">
           Brand, social media, editorial and graphic design work.
         </h5>
+        <a href="#brand" className="text-md text-slate-500">See more</a>
       </div>
 
     </div>
 
-    <div className="flex flex-col gap-4 w-full sm:flex-row">
+    <div id="ux" className="flex flex-col gap-4 w-full sm:flex-row">
       <div className="flex w-fit">
-        <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="jelly.png" ></img>  
+        <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="dna.png" ></img>  
       </div>
       <div className="flex flex-col gap-1 w-full">
         <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
@@ -99,13 +102,33 @@ export default function Home() {
           <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2022</p>
         </div>
         <p className="text-md w-full leading-6 text-slate-500">
-          Redesigned the Devops website 
+          Created a professional, user-friendly website for Devops Partner, enhancing their online presence and showcasing their services.
         </p>
         <img className="w-full rounded-lg bg-slate-900 max-h-80 my-4 object-cover border-2 border-slate-500" src="devops - 01.png"></img>
       </div>
     </div>
+<div className="flex w-full">
+    <h3 className="text-4xl w-full mt-24 leading-10 text-center">
+      Let`s make internet, <span className="text-blue-300">beauty</span><br/> and <span className="text-pink-300">better</span> together.
+    </h3>
+</div>
+  <div className="flex w-full justify-center my-4 flex-row gap-2">
+    <a  href="https://www.linkedin.com/in/vitorbotelhoo/"
+        className="bg-slate-900 text-slate-400 hover:text-slate-300 px-2 py-1 border-slate-800 hover:border-slate-700 border-2 rounded-lg">
+      LinkedIn
+    </a>
 
+    <a  href="https://read.cv/vitorbotelhoo"
+        className="bg-slate-900 text-slate-400 hover:text-slate-300 px-2 py-1 border-slate-800 hover:border-slate-700 border-2 rounded-lg">
+      Read.cv
+    </a>
 
+    <a  href="mailto:vitor@correnteza.com"
+        className="bg-slate-900 text-slate-400 hover:text-slate-300 px-2 py-1 border-slate-800 hover:border-slate-700 border-2 rounded-lg">
+      vitor@correnteza.com
+    </a>
+  </div>
+    
 
       {/* Final */}
      </div> 
