@@ -37,7 +37,7 @@ export default function Home() {
 
       {/* Lista de Item */}
       
-    <div className="flex flex-col sm:flex-row gap-2 w-full my-12">
+    <div className="flex flex-col md:sm:flex-row sm:flex-row gap-2 w-full my-12">
 
       <div className="flex align-end justify-start w-full flex-col pr-6 pt-14 pl-4 pb-4 gap-4 rounded-2xl border-slate-900 border-2">
         <img src="icon-product-01.png" className="object-contain h-12 w-12"></img>
@@ -62,7 +62,7 @@ export default function Home() {
         <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="dna.png" ></img>  
       </div>
       <div className="flex flex-col gap-1 w-full">
-        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+        <div className="flex flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
           <p className="text-md w-full leading-6">App <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://clincard.com.br/">Clincard</a></p>
           <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2024 
             <span className="bg-green-900 text-green-200 ml-2 px-1 py-0 border-green-800 border-2 rounded-md">On App Store</span></p>
@@ -80,7 +80,7 @@ export default function Home() {
         <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="airplane.png" ></img>  
       </div>
       <div className="flex flex-col gap-1 w-full">
-        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+        <div className="flex flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
           <p className="text-md w-full leading-6">Webapp <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://www.harpa.global/en">Harpa Global</a></p>
           <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2024 
             <span className="bg-green-900 text-green-200 ml-2 px-1 py-0 border-green-800 border-2 rounded-md">On Live</span></p>
@@ -97,7 +97,7 @@ export default function Home() {
         <img className="w-7 h-7 object-contain rounded-md bg-slate-900 p-1" src="jelly.png" ></img>  
       </div>
       <div className="flex flex-col gap-1 w-full">
-        <div className="flex bg-black flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
+        <div className="flex flex-col justify-beetween w-full min-h-7 mb-2 sm:flex-row align-center">
           <p className="text-md w-full leading-6">Website <span className="text-slate-500">for</span> <a className="underline decoration-1 hover:decoration-2" href="https://devops.inf.br/">Devops</a></p>
           <p className="text-md w-full text-right leading-6 text-slate-500">Made in 2022</p>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
     </div>
 <div className="flex w-full">
     <h3 className="text-4xl w-full mt-24 leading-10 text-center">
-      Let&apos;s make internet <span className="text-blue-300">beauty</span> and <span className="text-pink-300">better</span> together.
+      Let&apos;s make internet <span className="text-blue-300">beautiful</span> and <span className="text-pink-300">better</span> together.
     </h3>
 </div>
   <div className="flex w-full justify-center my-4 flex-row gap-2">
