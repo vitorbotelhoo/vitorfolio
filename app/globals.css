@@ -6,27 +6,27 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --cores-branco: rgb(255 255 255);
-  --cores-neutros-neutral--20: rgb(227 235 242);
-  --cores-neutros-neutral--30: rgb(160 172 181);
-  --cores-neutros-neutral--50: rgb(72 74 78);
-  --cores-neutros-neutral--70: rgb(20 20 21);
-  --cores-azul-po-a: rgb(178 217 252);
-  --cores-azul-corrente: rgb(0 147 255);
-  --cores-azul-marinho: rgb(15 39 82);
-  --cores-azul-baleia: rgb(8 21 44);
-  --cores-azul-noite: rgb(5, 12, 21);
-  --cores-rosa-rosado: rgb(244 219 235);
-  --cores-rosa-rosa: rgb(237 166 213);
-  --cores-rosa-bord-: rgb(64 19 39);
-  --cores-situacionais-negativo-10: rgb(240 207 215);
-  --cores-situacionais-negativo--20: rgb(225 155 172);
-  --cores-situacionais-negativo--40: rgb(240 74 114);
-  --cores-situacionais-negativo--70: rgb(108 7 31);
-  --cores-situacionais-positivo--10: rgb(227 254 238);
-  --cores-situacionais-positivo--20: rgb(167 253 202);
-  --cores-situacionais-positivo--40: rgb(43 235 120);
-  --cores-situacionais-positivo--70: rgb(10 78 37);
+  --vtr-branco: rgb(255 255 255);
+  --vtr-neutral-20: rgb(227 235 242);
+  --vtr-neutral-30: rgb(160 172 181);
+  --vtr-neutral-50: rgb(72 74 78);
+  --vtr-neutral-70: rgb(20 20 21);
+  --vtr-poca: rgb(178 217 252);
+  --vtr-corrente: rgb(0 147 255);
+  --vtr-marinho: rgb(15 39 82);
+  --vtr-baleia: rgb(8 21 44);
+  --vtr-noite: rgb(3, 7, 8);
+  --vtr-rosado: rgb(244 219 235);
+  --vtr-rosa: rgb(237 166 213);
+  --vtr-bordo: rgb(64 19 39);
+  --vtr-negativo-10: rgb(240 207 215);
+  --vtr-negativo-20: rgb(225 155 172);
+  --vtr-negativo-40: rgb(240 74 114);
+  --vtr-negativo-70: rgb(108 7 31);
+  --vtr-positivo-10: rgb(227 254 238);
+  --vtr-positivo-20: rgb(167 253 202);
+  --vtr-positivo-40: rgb(43 235 120);
+  --vtr-positivo-70: rgb(10 78 37);
   --desktop-heading-1: 48px;
   --desktop-heading-2: 36px;
   --desktop-heading-3: 28px;
@@ -37,18 +37,74 @@
   --desktop-button-text: 16px;
   --desktop-observartion: 12px;
   --desktop-support: 12px;
+  --gabarito: {Gabarito};
+  --manrope: {Manrope};
 }
 
 body {
-  background-color: var(--cores-azul-noite);
-  color: var(--cores-branco);
+  background-color: var(--vtr-branco);
+  color: var(--vtr-baleia);
   margin: 0px; padding: 0px;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--vtr-branco);
+  background: var(--vtr-marinho);
+}
+
+::selection {
+  color: var(--vtr-branco);
+  background: var(--vtr-marinho);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding: 1px;
+  margin: 1px;
+}
+
+#listScroller::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  padding: 1px;
+  margin: 1px;
+}
+
+#draggimage::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  padding: 1px;
+  margin: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  background-color: var(--cores-azul-noite);
+  box-shadow: #123123;
+  padding: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--cores-azul-baleia);
+  border-radius: 12px;
+  margin: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cores-azul-marinho);
+  transition: color 500ms ease-in-out;
 }
 
 @media screen and (max-width: 700px){
@@ -59,4 +115,54 @@ body {
   .image-get-vertical {
     max-height: 400px;
   }
+}
+
+h1 {
+  font-family: 'Gabarito';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.vtr-heading { 
+  font-family: 'Gabarito';
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+main p {
+  font-family: "Manrope";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+main a {
+  font-family: "Manrope";
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: #E3EBF2;
+  color: var(--vtr-marinho);
+  height: 24px;
+  width: fit-content;
+}
+
+.font-gabarito {
+  font-family: var(--gabarito);
+}
+
+.font-manrope {
+  font-family: 'Manrope';
+}
+
+#card:hover .button {
+  background-color: var(--vtr-poca);
+  transition: all ease-in;
+  transition-duration: 800ms;
 }
