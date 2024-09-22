@@ -27,26 +27,17 @@
   --vtr-positivo-20: rgb(167 253 202);
   --vtr-positivo-40: rgb(43 235 120);
   --vtr-positivo-70: rgb(10 78 37);
-  --desktop-heading-1: 48px;
-  --desktop-heading-2: 36px;
-  --desktop-heading-3: 28px;
-  --desktop-subheading: 20px;
-  --desktop-callout: 12px;
-  --desktop-long-text: 16px;
-  --desktop-bold-long-text: 16px;
-  --desktop-button-text: 16px;
-  --desktop-observartion: 12px;
-  --desktop-support: 12px;
-  --gabarito: {Gabarito};
-  --manrope: {Manrope};
+  --font-gabarito: var(--font-gabarito);
+  --font-manrope: var(--font-manrope);
 }
 
 body {
+  font-family: var(--font-manrope), sans-serif;
   background-color: var(--vtr-branco);
   color: var(--vtr-baleia);
   margin: 0px; padding: 0px;
   -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
@@ -117,28 +108,21 @@ body {
   }
 }
 
-h1 {
-  font-family: 'Gabarito';
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.vtr-heading { 
-  font-family: 'Gabarito';
+main .vtr-heading {
+  font-family: var(--font-gabarito);
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 }
 
 main p {
-  font-family: "Manrope";
+  font-family: var(--font-manrope);
   font-size: 14px;
   line-height: 20px;
 }
 
 main a {
-  font-family: "Manrope";
+  font-family: var(--font-manrope);
   font-size: 14px;
   line-height: 20px;
   display: flex;
@@ -153,15 +137,15 @@ main a {
   width: fit-content;
 }
 
-.font-gabarito {
-  font-family: var(--gabarito);
+main .font-gabarito {
+  font-family: var(--font-gabarito);
 }
 
-.font-manrope {
-  font-family: 'Manrope';
+main .font-manrope {
+  font-family: var(--font-manrope);
 }
 
-#card:hover .button {
+main #card:hover .button {
   background-color: var(--vtr-poca);
   transition: all ease-in;
   transition-duration: 800ms;

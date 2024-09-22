@@ -38,9 +38,9 @@ export default function Structure({
   
             <div
               id="heading_container"
-              className="flex flex-col gap-[16px] pt-[80px]">
+              className="flex flex-col gap-[8px] pt-[80px]">
               <h1
-                className="vtr-heading">{ PageHeadline}</h1>
+                className="font-heading text-[24px]" font-gabarito>{ PageHeadline }</h1>
               <p>{ PageDescription }</p>
             </div>
   
