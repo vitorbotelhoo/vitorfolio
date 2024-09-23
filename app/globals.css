@@ -150,3 +150,7 @@ main #card:hover .button {
   transition: all ease-in;
   transition-duration: 800ms;
 }
+
+.font-heading {
+  line-height: 24px;
+}
